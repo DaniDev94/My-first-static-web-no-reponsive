@@ -1,0 +1,33 @@
+.b-header {
+  background-image: url(./image/mountains-1412683.svg);
+  position: relative;
+  height: 700px;
+  background-size: cover;
+  &__container{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+  }
+};
+
+.b-nav{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  &__link{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #ffff;
+    font-family: monospace;
+    &:hover{
+      border-bottom: 1px solid #636ba3;
+    };
+  };
+};
+
+
+
+body {
+  margin: 0;
+}
