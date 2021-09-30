@@ -1,32 +1,88 @@
 .b-header {
-  background-image: url(./image/mountains-1412683.svg);
-  position: relative;
-  height: 700px;
+  background-image: url(./image/cloudy-1854241.jpg);
+  height: 100vh;
   background-size: cover;
-  &__container{
-    height: 50px;
-    background-color: black;
+  border: 1px solid black;
+  &__container {
+    height: 150px;
+    padding: 0 150px 0 200px;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
+    align-items: center;
   }
-};
+  &__info {
+    margin-top: 45px;
+    position: absolute;
+    left: 230px;
+    top: 160px;
+    
+  }
+}
 
-.b-nav{
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  &__link{
+.b-nav {
+  font-size: 19px;
+  &__link {
     text-decoration: none;
-    margin-left: 30px;
-    color: #ffff;
-    font-family: monospace;
-    &:hover{
-      border-bottom: 1px solid #636ba3;
-    };
-  };
-};
+    font-family: Tahoma, sans-serif;
+    color: #000;
+    margin-right: 20px;
+    &:hover {
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+}
 
+.b-heading {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 50%;
+  margin: 0;
+  &__title {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+  }
+}
 
+.b-subheading {
+  max-width: 50%;
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.b-btn {
+  font-family: Tahoma, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 6px 40px 6px 40px;
+  background-color: transparent;
+  margin-top: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(232, 232, 232, 0.157);
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+  }
+}
+
+.b-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #d0d0d8;
+  position: absolute;
+ 
+}
 
 body {
   margin: 0;
