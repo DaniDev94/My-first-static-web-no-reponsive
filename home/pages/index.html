@@ -12,11 +12,11 @@
 <body>
     <header class="b-header">
         <div class="b-header__container">
-            <a href="../home/index.html"><img src="../image/logo.png" alt="logo"></a>
+            <a href="#footer"><img src="../icons/logo.png" alt="logo"></a>
             <nav class="b-nav">
                 <a class="b-nav__link" href="#home">Home</a>
                 <a class="b-nav__link" href="#about">About</a>
-                <a class="b-nav__link" href="../contact/index.html">Contact</a>
+                <a class="b-nav__link" href="#contant">Contact</a>
             </nav>
         </div>
         <div class="b-header__info">
@@ -28,12 +28,12 @@
                 itand let's go together on the journey that gives way to a new beginning.
                 <!-- Soy estudiante de Full Stack Developer y me apasiona el mundo del diseño y la creación. Después de muchos años trabajando como chef desarrollando mi creatividad y adaptabilidad, decidí tener un cambio en mi vida y empecé una búsqueda incansable hacia mi sueño... descubre la historia que hay detrás y vayamos juntos en el viaje que da paso a un nuevo comienzo. -->
             </p>
-            <button class="b-btn" onclick="location.href='../about/index.html'">discover it</button>
+            <button class="b-btn" onclick="location.href='#discover'">discover it</button>
         </div>
     </header>
     <main>
         <div id="home" class="b-container-one">
-            <div class="b-title">
+            <div id="discover"class="b-title">
                 <h2>ready to live</h2>
             </div>
             <div class="b-gallery">
@@ -41,7 +41,7 @@
                     <img class="b-gallery__img" src="../image/bike3.jpg" alt="bike">
                     <div class="b-gallery__content">
                         <h2 class="b-gallery__title">leisure</h2>
-                        <button class="b-btn b-btn--two" onclick="location.href='../about/index.html'">explore
+                        <button class="b-btn b-btn--two" onclick="location.href='#leisure'">explore
                             leisure</button>
                     </div>
                 </div>
@@ -57,14 +57,14 @@
                     <img class="b-gallery__img" src="../image/hands.jpg" alt="hands">
                     <div class="b-gallery__content">
                         <h2 class="b-gallery__title">passion</h2>
-                        <button class="b-btn b-btn--two" onclick="location.href='../about/index.html'">explore
+                        <button class="b-btn b-btn--two" onclick="location.href='#passion'">explore
                             passion</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="about" class="b-container-end">
-            <div class="b-box-img">
+        <div class="b-container-end" id="about">
+            <div class="b-box-img" id="philosophy">
                 <img class="b-box-img__image" src="../image/yin-yang.jpg" alt="yin-yang">
             </div>
             <div class="b-box-txt">
@@ -86,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="b-container-end">
+        <div class="b-container-end" id="leisure">
             <div class="b-box-txt b-box-txt--dark">
                 <div class="b-box-txt__content">
                     <h3 class="b-box-txt__title b-box-txt__title--light">leisure</h3>
@@ -109,7 +109,7 @@
                 <img class="b-box-img__image" src="../image/leisure.jpg" alt="leisure">
             </div>
         </div>
-        <div class="b-container-end">
+        <div class="b-container-end" id="passion">
             <div class="b-box-img">
                 <img class="b-box-img__image" src="../image/creativity.jpg" alt="creativity">
             </div>
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="b-container-form">
-            <form class="b-form" action="" method="POST" id="form">
+            <form class="b-form" id="contant"action="#" method="POST" >
                 <div class="b-form__content">
                     <h1 class="b-form__title">say hi</h1>
                     <div class="b-group">
@@ -149,15 +149,24 @@
                             maxlength="222"></textarea>
                         <label class="b-group__label" for="message">message</label>
                     </div>
-                    <button type="submit" class="b-btn b-btn--three"
-                        onclick="location.href='../about/index.html'">send</button>
+                    <button type="submit" class="b-btn b-btn--three">send</button>
                 </div>
             </form>
         </div>
     </main>
     <footer>
-        <div class="b-footer">
-
+        <div class="b-footer" id="footer">
+            <div class="b-logo">
+                <a href="#"><img class="b-logo__img" src="../icons/logo.png" alt="logo"></a>
+            </div>
+            <div class="b-info">
+                <h3 class="b-info__head">email address: <span class="b-info__span">correo_electronico@gmail.com</span></h3>
+                <h3 class="b-info__head">tlf:<span class="b-info__span">671568465#</span></h3>
+                <div class="b-info-logo">
+                    <a href="https://github.com/DaniDev94"><img class="b-info-logo__one" src="../icons/github.svg" alt="github"></a>
+                    <a href="https://gitlab.com/daniel.lp1094"><img class="b-info-logo__two"src="../icons/gitlab.svg" alt="gitlab"></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
